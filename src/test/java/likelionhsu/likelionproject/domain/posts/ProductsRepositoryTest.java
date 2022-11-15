@@ -13,30 +13,33 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 @ExtendWith(SpringExtension.class)
 @SpringBootTest
-public class PostsRepositoryTest {
+public class ProductsRepositoryTest {
     @Autowired
-    PostsRepository postsRepository;
+    ProductsRepository productsRepository;
 
     @AfterEach
     public void cleanup() {
-        postsRepository.deleteAll();
+        productsRepository.deleteAll();
     }
 
     @Test
-    public void 게시글저장_불러오기() {
-        String title = "게시글 제목";
-        String content = "게시글 본문";
+    public void 상품저장_불러오기() {
+        String title = "상품 제목";
+        String content = "상품 본문";
+        int price = 120000;
 
-        postsRepository.save(Posts.builder()
+        productsRepository.save(Products.builder()
                 .title(title)
                 .content(content)
+                .price(price)
                 .author("kimhunsope@naver.com")
                 .build());
 
-        List<Posts> postsList = postsRepository.findAll();
+        List<Products> productsList = productsRepository.findAll();
 
-        Posts post = postsList.get(0);
+        Products post = productsList.get(0);
         assertThat(post.getTitle()).isEqualTo(title);
         assertThat(post.getContent()).isEqualTo(content);
+        assertThat(post.getPrice()).isEqualTo(price);
     }
 }
