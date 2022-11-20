@@ -1,4 +1,4 @@
-package likelionhsu.likelionproject.domain.posts;
+package likelionhsu.likelionproject.domain.products;
 
 import lombok.Builder;
 import lombok.Getter;

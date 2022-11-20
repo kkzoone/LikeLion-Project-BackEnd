@@ -1,6 +1,6 @@
 package likelionhsu.likelionproject.web.dto;
 
-import likelionhsu.likelionproject.domain.posts.Products;
+import likelionhsu.likelionproject.domain.products.Products;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;

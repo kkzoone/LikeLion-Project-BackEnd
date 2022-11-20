@@ -1,6 +1,6 @@
-package likelionhsu.likelionproject.service.posts;
+package likelionhsu.likelionproject.service.products;
 
-import likelionhsu.likelionproject.domain.posts.ProductsRepository;
+import likelionhsu.likelionproject.domain.products.ProductsRepository;
 import likelionhsu.likelionproject.web.dto.ProductsSaveRequestDto;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;

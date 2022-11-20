@@ -1,6 +1,6 @@
 package likelionhsu.likelionproject.web;
 
-import likelionhsu.likelionproject.service.posts.ProductsService;
+import likelionhsu.likelionproject.service.products.ProductsService;
 import likelionhsu.likelionproject.web.dto.ProductsSaveRequestDto;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.PostMapping;

@@ -1,4 +1,4 @@
-package likelionhsu.likelionproject.domain.posts;
+package likelionhsu.likelionproject.domain.products;
 
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Test;
